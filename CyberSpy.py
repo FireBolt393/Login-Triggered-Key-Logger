@@ -11,7 +11,7 @@ flag = False
 keys = []
 
 # Configure Tesseract executable path
-pytesseract.pytesseract.tesseract_cmd = r"C:\Users\adars\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"C:\path\to\tesseract.exe"
 
 # all the print statements are for testing purposes
 def capture_screen():
