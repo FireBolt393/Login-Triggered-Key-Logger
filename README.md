@@ -25,15 +25,17 @@ Encrypted Data Transmission: Captured keystrokes can be transmitted securely to 
 
 ## Prerequisites
 Python 3.x
-pytesseract for OCR (Optical Character Recognition)
+`pytesseract` for OCR (Optical Character Recognition)
 
-opencv-python for screen capture
+`opencv-python` for screen capture
 
-socket for network communication
+`socket` for network communication
 
-threading for handling multiple connections
+`threading` for handling multiple connections
 
-Tesseract-OCR installed (required by pytesseract)
+`Tesseract-OCR` installed (required by pytesseract)
+
+`keyboard` for logging the keys pressed by the victim.
 
 Make sure to install the compiled version of Tesseract-OCR and provide the right path in the script. 
 
