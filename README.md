@@ -19,12 +19,15 @@ Encrypted Data Transmission: Captured keystrokes can be transmitted securely to 
 
 **Keylogging Activation:** Upon detecting these keywords, the keylogger activates and starts recording all keystrokes.
 
-**Data Transmission:** The captured keystrokes are then encrypted and sent to a remote server or stored locally, depending on the configuration.
+**Data Transmission:** The captured keystrokes and the URL of the website are then encrypted and sent to a remote server or stored locally, depending on the configuration.
 
 **Acknowledgment:** After sending the data, the listener sends back an acknowledgment to confirm successful delivery.
 
+**note:** The spyware sends all the URLs present on the screen (If there are shortcuts other than the actual URL). The user should try the captured keys on all the websites sent by the spyware.
+
 ## Prerequisites
 Python 3.x
+
 `pytesseract` for OCR (Optical Character Recognition)
 
 `opencv-python` for screen capture
