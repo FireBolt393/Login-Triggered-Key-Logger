@@ -1,7 +1,7 @@
 import random
 import base64
 
-# this is the same encryptor that i have built before.
+# This is the same encryptor that I had built before.
 def encrypt(file):
     try:
 
