@@ -42,12 +42,17 @@ Python 3.x
 
 Make sure to install the compiled version of Tesseract-OCR and provide the right path in the script. 
 
-## Usage
+## Possible Modifications
 **Modify Keywords:** Customize the list of keywords in the find_login_keywords function to match the specific login forms you want to target.
 
 **Encryption Configuration:** Feel free to use an encryption of your own.
 
-**Server Setup:** run listener.py to start the server. The spyware stores the encrypted captured data on the victim's device. Once the server starts, if the victim's machine is active, it sends the stored data to the server.
+**Regex**: You can modify the regular expression used to capture URLs to make the spyware more efficient.
+
+# Usage
+**Victim's machine:** This spyware moves itself to the startup folder. This ensures the spyware to automatically execute whenever the device is turned on. The victim machine should be up and running for it to transmit the data. If the Server is offline, it stores the encrypted data on a notepad.
+
+**Server Setup:** Run listener.py to start the server. The spyware stores the encrypted captured data on the victim's device. Once the server starts, if the victim's machine is active, it sends the stored data to the server.
 
 ## Legal Disclaimer
 This project is for educational purposes only. Unauthorized use of keyloggers to capture sensitive information is illegal and unethical. Ensure that you have explicit permission before using this tool in any environment. The creators of this tool are not responsible for any misuse or damage caused by this software.
