@@ -41,7 +41,7 @@ def sendMessage(message):
     if check_listener():
         try:
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-                sock.connect(('127.0.0.1', 9999))
+                sock.connect(('127.0.0.1', 9999)) # localhost, modify it while using.
                 sock.sendall(message.encode('utf-8'))
                 # print("Message sent successfully!")
                 acknowledgment = sock.recv(1024).decode('utf-8')
