@@ -1,3 +1,6 @@
+![Uploading image.png…]()
+
+
 # Login-Triggered-Key-Logger
 **CyberSpy** is a Python-based keylogger designed to activate when a login page is detected on the user's screen. The tool captures keystrokes only when specific keywords associated with login forms, such as "username" or "password," are detected on the screen. This project is intended for educational purposes, demonstrating how a targeted keylogger can be developed and used in ethical hacking simulations or penetration testing scenarios.
 
